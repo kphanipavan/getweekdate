@@ -23,7 +23,7 @@ def __get_day(wkDay, wkDayType, dat=date.today()):
         Dt1 = add_Dt + dt.timedelta(days=z)
         #print(Dt1)
         Dt1 = Dt1 + dt.timedelta(days=dw[wkDay.lower()])
-        print(Dt1, "in_n")
+        print(Dt1)
     elif wkDayType.lower()=='previous':
         add_Dt = dat - dt.timedelta(days=dat.weekday())
 
@@ -34,7 +34,7 @@ def __get_day(wkDay, wkDayType, dat=date.today()):
         Dt1 = add_Dt - dt.timedelta(days=z)
         #print(Dt1)
         Dt1 = Dt1 + dt.timedelta(days=dw[wkDay.lower()])
-        print(Dt1, "in_p")
+        print(Dt1)
     elif wkDayType.lower() == 'previous_week':
         add_Dt = dat - dt.timedelta(days=dat.weekday())
         if dat.weekday() < dw[wkDay.lower()]:
@@ -44,7 +44,7 @@ def __get_day(wkDay, wkDayType, dat=date.today()):
         Dt1 = add_Dt - dt.timedelta(days=z)
         #print(Dt1)
         Dt1 = Dt1 + dt.timedelta(days=dw[wkDay.lower()])
-        print(Dt1,"in_pw")
+        print(Dt1)
     elif wkDayType.lower() == 'next_week':
         add_Dt = dat + dt.timedelta(days=7)
         add_Dt = add_Dt - dt.timedelta(days=dat.weekday())
@@ -56,7 +56,7 @@ def __get_day(wkDay, wkDayType, dat=date.today()):
         Dt1 = add_Dt + dt.timedelta(days=z)
         #print(Dt1)
         Dt1 = Dt1 + dt.timedelta(days=dw[wkDay.lower()])
-        print(Dt1,"in_nw")
+        print(Dt1)
 
 def get_weekdate(wkDay, wkDayType, Dtdt=0):
     if Dtdt == 0:
