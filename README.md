@@ -29,4 +29,4 @@ get_weekdate('Saturday', 'pReviouS', '2001-5-1')
 get_weekdate('Monday', 'pReviouS_weeK')
 
 
-P.S: The text is not case sensitive. The date must be in proper format.
+P.S: The text is not case sensitive. The date must be in proper format and the numbers must be saperated by '-'
